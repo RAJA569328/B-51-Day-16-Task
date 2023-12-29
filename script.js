@@ -1,5 +1,5 @@
 let Wish = document.querySelector("#text-Changes")
-function changes(){
+let changes = () => {
     setTimeout(()=>{
         Wish.innerHTML="10"
         setTimeout(()=>{
@@ -22,7 +22,7 @@ function changes(){
                                             Wish.innerHTML = "1"
                                             setTimeout(()=>{
                                                 Wish.innerHTML="Happy Independence day"
-                                            },1000);
+                                                },1000);
                                         }, 1000);
                                     }, 1000);
                                 }, 1000);
@@ -34,6 +34,6 @@ function changes(){
         },1000);
         
     },0) 
-}
+};
 changes()
 
